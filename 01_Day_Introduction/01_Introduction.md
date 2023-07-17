@@ -1,33 +1,11 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 1 - Introduction</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
-
-  <sub>Author:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small> Second Edition: July, 2021</small>
-  </sub>
+  <h1> Introduction</h1>
 </div>
 
 
-[Day 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md)
 
-![30DaysOfPython](./images/30DaysOfPython_banner3@2x.png)
-
-- [🐍 30 Days Of Python](#-30-days-of-python)
-- [📘 Day 1](#-day-1)
-  - [Welcome](#welcome)
   - [Introduction](#introduction)
   - [Why Python ?](#why-python-)
-  - [Environment Setup](#environment-setup)
-    - [Installing Python](#installing-python)
-    - [Python Shell](#python-shell)
-    - [Installing Visual Studio Code](#installing-visual-studio-code)
-      - [How to use visual studio code](#how-to-use-visual-studio-code)
   - [Basic Python](#basic-python)
     - [Python Syntax](#python-syntax)
     - [Python Indentation](#python-indentation)
@@ -47,94 +25,17 @@
     - [Exercise: Level 2](#exercise-level-2)
     - [Exercise: Level 3](#exercise-level-3)
 
-# 📘 Day 1
-
-## Welcome
-
-**Congratulations** for deciding to participate in a _30 days of Python_ programming challenge . In this challenge you will learn everything you need to be a python programmer and the whole concept of programming. In the end of the challenge you will get a _30DaysOfPython_ programming challenge certificate.
-
-If you would like to actively engage in the challenge, you may join the [30DaysOfPython challenge](https://t.me/ThirtyDaysOfPython) telegram group.  
 
 ## Introduction
 
-Python is a high-level programming language for general-purpose programming. It is an open source, interpreted, objected-oriented programming language. Python was created by a Dutch programmer, Guido van Rossum. The name of Python programming language was derived from a British sketch comedy series, *Month Python's Flying Circus*.  The first version was released on February 20, 1991. This 30 days of Python challenge will help you learn the latest version of Python, Python 3 step by step. The topics are broken down into 30 days, where each day contains several topics with easy-to-understand explanations, real-world examples, many hands on exercises and projects.
-
-This challenge is designed for beginners and professionals who want to learn python programming language. It may take 30 to 100 days to complete the challenge, people who actively participate on the telegram group have a high probability of completing the challenge.
-
-This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. You may start from [Python for Absolute Beginners video](https://youtu.be/OCCWZheOesI). Subscribe the channel, comment and ask questions on YouTube vidoes and be proactive, the author will eventually notice you. 
-
-The author likes to hear your opinion about the challenge, share the author by expressing your thoughts about the 30DaysOfPython challenge. You can leave your testimonial on this [link](https://testimonial-vdzd.onrender.com/)
+Python is a high-level programming language for general-purpose programming. It is an open source, interpreted, objected-oriented programming language. Python was created by a Dutch programmer, Guido van Rossum. The name of Python programming language was derived from a British sketch comedy series, *Month Python's Flying Circus*.  The first version was released on February 20, 1991.
 
 ## Why Python ?
 
 It is a programming language which is very close to human language and because of that it is easy to learn and use.
 Python is used by various industries and companies (including Google). It has been used to develop web applications, desktop applications, system adminstration, and machine learning libraries. Python is highly embraced language in the data science and machine learning community. I hope this is enough to convince you to start learning Python. Python is eating the world and you are killing it before it eats you.
 
-## Environment Setup
 
-### Installing Python
-
-To run a python script you need to install python. Let's [download](https://www.python.org/) python.
-If your are a windows user. Click the button encircled in red.
-
-[![installing on Windows](./images/installing_on_windows.png)](https://www.python.org/)
-
-If you are a macOS user. Click the button encircled in red.
-
-[![installing on Windows](./images/installing_on_macOS.png)](https://www.python.org/)
-
-To check if python is installed write the following command on your device terminal.
-
-```shell
-python --version
-```
-
-![Python Version](./images/python_versio.png)
-
-As you can see from the terminal, I am using _Python 3.7.5_ version at the moment. Your version of Python might be different from mine by but it should be 3.6 or above. If you mange to see the python version, well done. Python has been installed on your machine. Continue to the next section.
-
-### Python Shell
-
-Python is an interpreted scripting language, so it does not need to be compiled. It means it executes the code line by line. Python comes with a _Python Shell (Python Interactive Shell)_. It is used to execute a single python command and get the result.
-
-Python Shell waits for the Python code from the user. When you enter the code, it interprets the code and shows the result in the next line.
-Open your terminal or command prompt(cmd) and write:
-
-```shell
-python
-```
-
-![Python Scripting Shell](./images/opening_python_shell.png)
-
-The Python interactive shell is opened and it is waiting for you to write Python code(Python script). You will write your Python script next to this symbol >>> and then click Enter.
-Let us write our very first script on the Python scripting shell.
-
-![Python script on Python shell](./images/adding_on_python_shell.png)
-
-Well done, you wrote your first Python script on Python interactive shell. How do we close the Python interactive shell ?
-To close the shell, next to this symbol >> write **exit()** command and press Enter.
-
-![Exit from python shell](./images/exit_from_shell.png)
-
-Now, you know how to open the Python interactive shell and how to exit from it.
-
-Python will give you results if you write scripts that Python understands, if not it returns errors. Let's make a deliberate mistake and see what Python will return.
-
-![Invalid Syntax Error](./images/invalid_syntax_error.png)
-
-As you can see from the returned error, Python is so clever that it knows the mistake we made and which was _Syntax Error: invalid syntax_. Using x as multiplication in Python is a syntax error because (x) is not a valid syntax in Python. Instead of (**x**) we use asterisk (*) for multiplication. The returned error clearly shows what to fix.
-
-The process of identifying and removing errors from a program is called *debugging*. Let us debug it by putting * in place of **x**.
-
-![Fixing Syntax Error](./images/fixing_syntax_error.png)
-
-Our bug was fixed, the code ran and we got a result we were expecting. As a programmer you will see such kind of errors on daily basis. It is good to know how to debug. To be good at debugging you should understand what kind of errors you are facing. Some of the Python errors you may encounter are *SyntaxError*, *IndexError*, *NameError*, *ModuleNotFoundError*, *KeyError*, *ImportError*, *AttributeError*, *TypeError*, *ValueError*, *ZeroDivisionError* etc. We will see more about different Python **_error types_** in later sections.
-
-Let us practice more how to use Python interactive shell. Go to your terminal or command prompt and write the word **python**.
-
-![Python Scripting Shell](./images/opening_python_shell.png)
-
-The Python interactive shell is opened. Let us do some basic mathematical operations (addition, subtraction, multiplication, division, modulus,  exponential).
 
 Let us do some maths first before we write any Python code:
 
@@ -165,36 +66,7 @@ Before we move on to the next section, let us practice more on the Python intera
 
 ![Writing String on python shell](./images/writing_string_on_shell.png)
 
-### Installing Visual Studio Code
 
-The Python interactive shell is good to try and test small script codes but it will not be for a big project. In real work environment, developers use different code editors to write codes. In this 30 days of Python programming challenge we will use visual studio code. Visual studio code is a very popular open source text editor. I am a fan of vscode and I would recommend to [download](https://code.visualstudio.com/) visual studio code, but if you are in favor of other editors, feel free to follow with what you have.
-
-[![Visual Studio Code](./images/vscode.png)](https://code.visualstudio.com/)
-
-If you installed visual studio code, let us see how to use it.
-If you prefer a video, you can follow this Visual Studio Code for Python [Video tutorial](https://www.youtube.com/watch?v=bn7Cx4z-vSo)
-
-#### How to use visual studio code
-
-Open the visual studio code by double clicking the visual studio icon. When you open it you will get this kind of interface. Try to interact with the labeled icons.
-
-![Visual studio Code](./images/vscode_ui.png)
-
-Create a folder named 30DaysOfPython on your desktop. Then open it using visual studio code.
-
-![Opening Project on Visual studio](./images/how_to_open_project_on_vscode.png)
-
-![Opening a project](./images/opening_project.png)
-
-After opening it you will see shortcuts for creating files and folders inside of 30DaysOfPython project's directory. As you can see below, I have created the very first file, helloworld.py. You can do the same.
-
-![Creating a python file](./images/helloworld.png)
-
-After a long day of coding, you want to close your code editor, right? This is how you will close the opened project.
-
-![Closing project](./images/closing_opened_project.png)
-
-Congratulations, you have finished setting up the development environment. Let us start coding.
 
 ## Basic Python
 
